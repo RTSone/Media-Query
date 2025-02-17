@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>Media Query</title>
+    <style>
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        h3 {
+
+            text-align: center;
+        }
+
+      
+ 
+ @media (min-width: 420px) and (max-width: 470px) {
+  body { background-color: #FFFFFF; color: #000000; } /* White BG, Black Text */
+}
+
+@media (min-width: 470px) and (max-width: 520px) {
+  body { background-color: #F0F0F0; color: #101010; }
+}
+
+@media (min-width: 520px) and (max-width: 580px) {
+  body { background-color: #E0E0E0; color: #202020; }
+}
+
+@media (min-width: 580px) and (max-width: 620px) {
+  body { background-color: #D0D0D0; color: #303030; }
+}
+
+@media (min-width: 620px) and (max-width: 680px) {
+  body { background-color: #C0C0C0; color: #404040; }
+}
+
+@media (min-width: 680px) and (max-width: 730px) {
+  body { background-color: #B0B0B0; color: #505050; }
+}
+
+@media (min-width: 730px) and (max-width: 780px) {
+  body { background-color: #A0A0A0; color: #606060; }
+}
+
+@media (min-width: 780px) and (max-width: 840px) {
+  body { background-color: #909090; color: #707070; }
+}
+
+@media (min-width: 840px) and (max-width: 890px) {
+  body { background-color: #808080; color: #808080; } /* Midpoint: Gray on Gray */
+}
+
+@media (min-width: 890px) and (max-width: 940px) {
+  body { background-color: #707070; color: #909090; }
+}
+
+@media (min-width: 940px) and (max-width: 990px) {
+  body { background-color: #606060; color: #A0A0A0; }
+}
+
+@media (min-width: 990px) and (max-width: 1050px) {
+  body { background-color: #505050; color: #B0B0B0; }
+}
+
+@media (min-width: 1050px) and (max-width: 1100px) {
+  body { background-color: #404040; color: #C0C0C0; }
+}
+
+@media (min-width: 1100px) and (max-width: 1200px) {
+  body { background-color: #303030; color: #D0D0D0; }
+}
+
+@media (min-width: 1200px) and (max-width: 1230px) {
+  body { background-color: #202020; color: #E0E0E0; }
+}
+
+@media (min-width: 1230px) and (max-width: 1260px) {
+  body { background-color: #101010; color: #F0F0F0; }
+}
+
+@media (min-width: 1260px) and (max-width: 1290px) {
+  body { background-color: #080808; color: #F8F8F8; }
+}
+
+@media (min-width: 1290px) and (max-width: 1320px) {
+  body { background-color: #050505; color: #FBFBFB; }
+}
+
+@media (min-width: 1320px) and (max-width: 1350px) {
+  body { background-color: #020202; color: #FDFDFD; }
+}
+
+@media (min-width: 1350px)  {
+  body { background-color: #000000; color: #FFFFFF; } /* Black BG, White Text */
+}
+
+@media (orientation: landscape) {
+
+
+    .smiley {
+                width: 200px;
+                height: 200px;
+                background-color: white;
+                border-radius: 50%;
+                position: relative;
+       align-items: center;
+       margin-left: 42.5%;
+       margin-top: 200px;
+            }
+
+            .smiley::before, .smiley::after {
+                content: "";
+                width: 30px;
+                height: 30px;
+                background-color: black;
+                border-radius: 50%;
+                position: absolute;
+                top: 30%;
+            }
+
+            .smiley::before { left: 25px; }
+            .smiley::after { right: 25px; }
+
+            /* Smile */
+            .smile {
+                width: 50px;
+                height: 25px;
+                border: 5px solid black;
+                border-top: none;
+                border-radius: 0 0 50px 50px;
+                position: absolute;
+                bottom: 25px;
+                left: 70px;
+            }
+        }
+
+        @media (orientation: landscape) and (min-width: 320px) and (max-width: 600px) {
+            body {
+                background-color: black;
+                color: white;
+            }
+        }
+
+
+        </style>
+        </head>
+
+        <body>
+            <h1>POWER IN MEIDA QUERIES</h1>
+            <h2>Expand me, move the browser...</h2>
+            <h3>Or turn me landscape...</h3>
+            <div class="smiley">
+                <div class="smile"></div>
+            </div>
+        </body>
+        
+        </html>
